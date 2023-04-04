@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="#">
+
+    <title>member</title>
+
+    <!-- Scripts -->
+    <iframe src="./bw_sub_html/track.html" scrolling="no" width="1" height="1" style="display: none;"></iframe>
+    <!-- Styles -->
+    <link href="./bw_css/style.css" rel="stylesheet">
+    <link href="./bw_css/bootstrap.css" rel="stylesheet">
+    <link href="./bw_css/bw_common.css" rel="stylesheet">
+    <link href="./bw_css/bw_style_pc.css" rel="stylesheet">
+    <link href="./bw_css/bw_style_pc_s.css" rel="stylesheet">
+    <!-- Facebook Pixel Code -->
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://tr.line.me/tag.gif?c_t=lap&t_id=9dbead1f-e514-4e1d-ac07-51018bad16b5&e=pv&noscript=1" />
+    </noscript>
+
+</head>
+
+<body>
+    <header class="bwTopHeader">
+        <div class="headerShoulder">
+            <div class="shoulderW">
+                <h1 class="shoulderInfo">終點閱讀</h1>
+                <nav class="shoulderNav">
+                    <a href="#">免費註冊</a>｜
+                    <a href="#">登入</a>
+                </nav>
+            </div>
+        </div>
+        <div class="headerMain">
+            <div class="headerBwLogo">
+                <a href="#">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid padtop" style="padding-bottom:0;">
+        <!-- 一般會員登入-->
+        <div class="bwbox">
+            <div class="boxtitle">
+                <span class="topic">登入</span>
+            </div>
+            <div class="section">
+                <div class="loginform form-horizontal">
+                    <form method="POST" action="#">
+                        <input type="hidden" name="_token" value="#">
+                        <div class="form-group row">
+                            <input id="email" type="email" placeholder="電子郵件" class="form-control " name="user_email"
+                                value="" required="" autocomplete="email" autofocus="">
+                        </div>
+
+                        <div class="form-group row">
+                            <input id="password" type="password" placeholder="密碼" class="form-control " name="password"
+                                required="" autocomplete="current-password">
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="loginForget">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember">
+
+                                    <label class="form-check-label" for="remember">
+                                        記住我
+                                    </label>
+                                </div>
+                                <a href="#">
+                                    <!-- class=bwi-exclamation -->
+                                    <label class="form-check-label">忘記密碼？</label>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="form-group row loginBtnSet">
+                            <button class="btn btn-default color_blue btn-lg btn-block" type="submit"
+                                id="login">登入</button>
+                        </div>
+                        <div class="form-group row loginBtnSet">
+                            <a class="btn btn-default color_blue btn-lg btn-block" href="#">免費註冊新會員</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1">
+                                <style>
+                                    @media screen and (max-height: 420px) {
+                                        .g-recaptcha {
+                                            transform: scale(0.8);
+                                            -webkit-transform: scale(0.8);
+                                            transform-origin: 0 0;
+                                            -webkit-transform-origin: 0 0;
+                                        }
+                                    }
+
+                                    @media screen and (max-height: 320px) {
+                                        .g-recaptcha {
+                                            transform: scale(0.77);
+                                            -webkit-transform: scale(0.77);
+                                            transform-origin: 0 0;
+                                            -webkit-transform-origin: 0 0;
+                                        }
+                                    }
+                                </style>
+                                <input type="hidden" value="" name="g-recaptcha-response" id="recaptchaResponse">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- ./一般會員登入-->
+        </div>
+        <div class="bwbox">
+            <div class="boxtitle">
+                <span class="topic">快速登入</span>
+            </div>
+            <div class="boxmain pad0">
+                <div class="p-outsideLogin">
+                    <ul class="p-outsideLogin__list">
+                        <li class="social">
+                            <a href="#" class="signin-button"
+                                onclick="gtag(&#39;event&#39;, &#39;login&#39;, { method : &#39;Facebook&#39; });">
+                                <img src="./bw_img/btn_login_fb.png" width="100%" alt="使用 Facebook 登入">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ./快速登入-->
+        </div>
+
+    </div><!-- ./container -->
+
+
+    <div>
+        <div class="grecaptcha-badge" data-style="bottomright"
+            style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+            <div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="./bw_sub_html/anchor.html" width="256"
+                    height="60" role="presentation" name="a-d9p3cdxx58w1" frameborder="0" scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+            </div>
+            <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+                class="g-recaptcha-response"
+                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+        </div><iframe style="display: none;" src="./bw_sub_html/saved_resource.html"></iframe>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://member.bookwalker.com.tw/ -->
+<html lang="zh-TW">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>起點閱讀 - 個人專頁</title>
+
+    <iframe src="./bw_sub_html/track.html" scrolling="no" width="1" height="1" style="display: none;"></iframe>
+
+
+    <link href="./bw_css/bootstrap.css" rel="stylesheet">
+    <link href="./bw_css/style.css" rel="stylesheet">
+    <link href="./bw_css/bw_common.css" rel="stylesheet">
+    <link href="./bw_css/bw_rwd.css" rel="stylesheet">
+    <link href="./bw_css/bw_radio_mo.css" rel="stylesheet">
+    <link href="./bw_css/bw_style_pc.css" rel="stylesheet">
+    <link href="./bw_css/bw_style_pc_s.css" rel="stylesheet">
+    <!-- Facebook Pixel Code -->
+
+    <style>
+        .data {
+            display: flex;
+            /* 水平置中 */
+            justify-content: center;
+            /* 垂直置中 */
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="bwTopHeader">
+        <div class="headerShoulder">
+            <div class="shoulderW">
+                <h1 class="shoulderInfo">起點閱讀</h1>
+                <nav class="shoulderNav">
+                    <a href="#">免費註冊</a>｜
+                    <a href="#">登入</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="headerMain">
+            <div class="headerBwLogo">
+                <a href="#">
+                    <!--  -->
+                </a>
+            </div>
+
+            <div class="headerLogout" aria-labelledby="navbarDropdown">
+                <a class="headerLogoutBtn" href="#">
+                    登出
+                </a>
+                <form id="logout-form" action="#" method="POST" style="display: none;">
+                    <input type="hidden" name="_token" value="IkPNvElF5OIqfQgmj4E7gJBTqqrFPq4t2AhYFhHO">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid catebar_padtop" style="padding-bottom:0;">
+        <!-- Breadcrumbs or Keyword -->
+
+        <div id="breadcrumb_list" class="bw_wmid2">
+            <ul class="breadcrumb txt12b">
+                <li><a href="#">終點首頁</a></li>
+                <li><a href="#">個人專頁</a></li>
+            </ul>
+        </div>
+        <!-- ./Breadcrumbs or Keyword -->
+
+        <!-- ad4_info-->
+        <div id="bw_user">
+            <div class="barcenter bw_wmid2 data">
+
+
+                <div class="bw_main2 rwdWrapper2">
+                    <!-- 右側內容頁-->
+
+                    <!-- 會員資料一覽-->
+                    <div class="listbox">
+
+                        <div class="listbox_title" style="background-color: blue;text-decoration: none;">
+                            <div class="bw_title"><span class="yline">會員資料一覽</span></div>
+                        </div>
+
+                        <div class="bookdesc clearfix ">
+
+                                <div class="infoTable">
+                                    <h2 class="infoTbTitle">個人資料</h2>
+
+                                    <div class="uploadPicBox">
+                                        <label class="uploadPic">
+                                            <img src="./bw_img/終點.png"
+                                                originsrc="https://taiwan-image.bookwalker.com.tw/avatar/531886.jpg?t=1680598266"
+                                                id="image_preview" width="100%" title="設定個人頭像">
+                                            <span class="btnIcon onlyIcon"><i class="bwi-set"
+                                                    aria-hidden="true"></i>設定個人頭像</span>
+                                            <input type="file" name="user_avatar" id="image_upload"
+                                                class="uploadPicInput" accept="image/jpeg"
+                                                onchange="preview_image(this)">
+                                        </label>
+                                        <div class="uploadPicFin" id="image_buttons" style="display:none">
+                                            <button type="button" class="btnFin btnStyleTxt"
+                                                onclick="return_user_avatar();">取消</button>
+                                            <button type="button" class="btnFin btnStyleTxt"
+                                                onclick="update_user_avatar();">完成</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="memberInfoLeft">
+                                        <ul class="infoTbList">
+                                            <li class="infoTbItem">帳號</li>
+                                            <li class="infoTbCon">######@gmail.com</li>
+                                        </ul>
+                                        <ul class="infoTbList">
+                                            <li class="infoTbItem">出生年月</li>
+                                            <li class="infoTbCon">######</li>
+                                        </ul>
+                                        <ul class="infoTbList">
+                                            <li class="infoTbItem">性別</li>
+                                            <li class="infoTbCon">#</li>
+                                        </ul>
+                                        <ul class="infoTbList" id="show_nickname">
+                                            <li class="infoTbItem">暱稱</li>
+                                            <li class="infoTbCon" id="nickname">
+                                            </li>
+                                            <li class="infoTbSet" onclick="begin_edit_nickname();"><span
+                                                    class="btnIcon onlyIcon"><i class="bwi-set" aria-hidden="true"
+                                                        title="設定暱稱"></i></span></li>
+                                        </ul>
+                                        <ul class="infoTbList" id="edit_nickname" style="display:none">
+                                            <li class="infoTbItem">暱稱</li>
+                                            <li class="infoTbCon"><input type="text" id="user_nickname"
+                                                    name="user_nickname" value="" class="inputTextStyle memberInfo">
+                                            </li>
+                                            <li class="infoTbSet" onclick="update_nickname();"><button type="submit"
+                                                    class="btnFin btnStyleTxt">完成</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="infoTable">
+                                    <h2 class="infoTbTitle">交易消費</h2>
+
+                                    <ul class="infoTbList">
+                                        <li class="infoTbItem">已購入書籍</li>
+                                        <li class="infoTbCon"><b class="infoTbImpor">#</b>&nbsp;本</li>
+                                        <li class="infoTbSet"><a href="#"
+                                                target="_blank" class="btnIcon onlyIcon"><i class="bwi-search"
+                                                    aria-hidden="true" title="查看已購入書籍"></i></a></li>
+                                    </ul>
+                                    <ul class="infoTbList">
+                                        <li class="infoTbItem">持有優惠券</li>
+                                        <li class="infoTbCon"><b class="infoTbImpor">#</b>&nbsp;張</li>
+                                        <li class="infoTbSet"><a href="#"
+                                                target="_blank" class="btnIcon onlyIcon"><i class="bwi-search"
+                                                    aria-hidden="true" title="查看持有優惠券"></i></a></li>
+                                    </ul>
+                                    <ul class="infoTbList">
+                                        <li class="infoTbItem">持有點數</li>
+                                        <li class="infoTbCon"><b class="infoTbImpor">#</b>&nbsp;點</li>
+                                        <li class="infoTbSet"><a href="#"
+                                                target="_blank" class="btnIcon onlyIcon"><i class="bwi-search"
+                                                    aria-hidden="true" title="查看持有點數"></i></a></li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
