@@ -1,0 +1,39 @@
+<!----- footer -----> 
+  <!-- No.211  --> 
+
+<footer>
+    <div class="wrap foot">
+        <a href="https://www.popo.tw/index" title="參考網站">
+            <div class="left"><img src="./POPO原創市集_files/icon-foot-author.png" width="88" height="88" alt="參考來源" title="參考來源"></div>
+            <div class="right"><h3>參考來源</h3><p>POPO原創市集</p></div>
+        </a>
+        <a href="https://www.popo.tw/faq" title="分工人員">
+            <div class="left"><img src="./POPO原創市集_files/icon-foot-reader.png" width="88" height="88" alt="讀者手冊" title="讀者手冊"></div>
+            <div class="right"><h3>分工人員</h3><p>蕭有村 馬資閔 張家維</p></div>
+        </a>
+        <a href="https://www.popo.tw/about" title="我還沒想到">
+            <div class="left"><img src="./POPO原創市集_files/icon-foot-about.png" width="88" height="88" alt="關於原創市集" title="關於原創市集"></div>
+            <div class="right"><h3>我還沒想到</h3><p>我還沒想到</p></div>
+        </a>
+    </div>
+    <!--<div class="copy-area animate-plus" data-animations="fadeIn" data-animation-delay="0s" data-animation-when-visible="true">-->
+    <div class="copy-area animate-plus animated" data-animations="fadeIn" data-animation-delay="0s" data-animation-when-visible="true" data-animation-group="_0">
+        <!-- <div class="logo-area">
+            <div class="logo"></div>
+            <div class="social"><a href="https://www.popo.tw/relay?url=https://www.facebook.com/wwwpopotw" target="_blank" title="Facebook粉絲團" class="fb"></a><a href="https://www.popo.tw/relay?url=http://www.weibo.com/popotw" target="_blank" title="微博" class="wb"></a><a href="https://www.popo.tw/relay?url=https://www.instagram.com/popostory_ig/" target="_blank" title="Instagram" class="ig"></a><a href="mailto:service@popo.tw" target="_blank" title="客服信箱" class="em"></a></div>
+        </div>
+        <ul class="foot-nav">
+            <li><a href="http://eventpage.popo.tw/whatispopo/">POPO是什麼</a></li>
+            <li><a href="https://www.popo.tw/rule/popocoin_usage">PO幣儲值與使用</a></li>
+            <li><a href="https://www.popo.tw/rule/member">服務條款</a></li>
+            <li><a href="https://www.popo.tw/privacy/pronouncement">隱私政策</a></li>
+            <li><a href="https://www.popo.tw/guide">網站導覽</a></li>
+            <li><a href="mailto:service@popo.tw">聯絡我們</a></li>
+            <li><a href="https://www.popo.tw/faq">常見問題</a></li>
+            <li><a href="https://www.popo.tw/consult">版權洽詢</a></li>
+            <li><a href="https://www.popo.tw/rule/exchange_tw">作家收入兌換說明</a></li>
+        </ul>
+        <div class="copy">Copyright © <script>document.write(new Date().getFullYear());</script>2023 Cite Media Holding Group All Rights Reserved. 版權所有 城邦原創股份有限公司 統一編號 28823076</div> -->
+    	
+    </div>
+</footer> 
