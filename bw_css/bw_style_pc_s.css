@@ -1,0 +1,1699 @@
+@charset "utf-8";
+@media screen and (max-width: 1280px) {
+	/* CSS Document */
+	body {
+		font-size: 14px;
+	}
+
+
+	#bw_topbar .info,
+	#bw_topbar .bwlogo {
+		width: 780px;
+	}
+
+	.bwbox {
+		/* padding: 6px 0 12px; *//*20221019*/
+	}
+
+	#bw_topbar .info,
+	#bw_topbar .info_w100 {
+		height: 20px;
+		text-align: right;
+	}
+
+	/** 首頁 cate bar */
+	.catebar {
+		background-color: #ffa91c;
+		height: 40px;
+	}
+
+	/**search input**/
+	.input_border0 {
+		width: 105px;
+
+	}
+
+	.listbox_main2_btn_prev {
+		position: absolute;
+		border: 0px;
+		top: 45%;
+		left: -16px;
+		z-index: 9;
+		outline: 0px;
+		background-color: transparent;
+		padding: 0;
+
+	}
+
+	.listbox_main2_btn_next {
+		position: absolute;
+		top: 45%;
+		right: -17px;
+		border: 0px;
+		z-index: 9;
+		outline: 0px;
+		background-color: transparent;
+		padding: 0;
+
+	}
+
+
+	/**出版社用**/
+	.mainpub {
+		/**update:1019**/
+		margin-left: 5px;
+	}
+
+	.pub_package {
+		padding: 20px 14px;
+	}
+
+	.pubbox {
+		margin: 0 10px;
+		padding-bottom: 20px;
+	}
+
+	/**側欄**/
+	/** 我要追蹤 **/
+	.aside_follow ol {
+		margin-bottom: 10px;
+
+	}
+
+	.aside_follow dt {
+		width: 85px;
+		padding-top: 6px;
+
+	}
+
+	.aside_follow dt h4 {
+		padding: 6px 0 0 0;
+
+	}
+
+
+	.aside_bookinfo {
+		float: right;
+		display: block;
+		width: 145px;
+		height: 130px;
+
+	}
+
+	/*書名2行-側欄用*/
+	.bookname2,
+	.booknamesub2 {
+		width: 140px;
+		padding-right: 5px;
+
+	}
+
+	/**測欄排行4-10書名**/
+	.aside_bookinfo_board2 {
+		float: left;
+		display: block;
+		width: 215px;
+	}
+
+
+	/**社群網站連結**/
+	.social_list {
+		width: 290px;
+
+
+	}
+
+	.social_list ul {
+		margin-left: 8px;
+	}
+
+	.social_list li {
+		width: 37px;
+		height: 37px;
+		margin: 0 4px;
+		padding: 0;
+		display: inline;
+		float: left;
+
+	}
+
+
+	/**使用說明**/
+	.bw_guide {
+		padding-top: 5px;
+		font-size: 14px;
+
+
+	}
+
+	.bw_guide li {
+		line-height: 14px;
+		padding: 0;
+		margin-bottom: 0;
+		list-style: none;
+		display: block;
+	}
+
+	.bw_guide .bwlogo {
+		margin: 0;
+		padding: 0;
+
+	}
+
+	.bw_guide .bwlogo img {
+		width: 110px;
+
+	}
+
+
+	.bw_guide .bw_3coin {
+		font-size: 12px;
+	}
+
+	.bw_guide ul {
+		padding-top: 0px;
+
+
+	}
+
+	.guide_bwlogo {
+		padding: 5px 7px;
+
+	}
+
+
+	/**ad3**/
+	.ad3 img {
+		width: 100%;
+	}
+
+
+	.padtop {
+		padding-top: 100px;
+	}
+
+	.section {
+		margin: 15px 95px;
+		/**update:0119**/
+
+
+	}
+
+	.loginform,
+	.socialbox {
+		margin: 0 auto;
+		/* width: 600px; *//*20221019*/
+
+	}
+
+
+	hr.title_social:after,
+	hr.title:after,
+	hr.title_new:after {
+		top: -.8em;
+		font-size: 24px;
+
+	}
+
+	/*nav 下方的間距*/
+	.padtop {
+		padding: 94px 0 0 0;
+	}
+
+
+	/**購物車側欄**/
+	#bw_container .bw_aside {
+		width: 280px;
+	}
+
+
+	.asidebox_cart,
+	.asidebox {
+		width: 100%;
+		min-width: 220px;
+		/**update**/
+
+	}
+
+
+	.aside_cartbox {
+		width: 100%;
+		background-color: #fff;
+		margin-bottom: 10px;
+	}
+
+
+	.event_bg {
+		font-size: 14px;
+	}
+
+
+	.item_point_arrowup {
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid #ececec;
+	}
+
+	.cartbtn_fast img {
+		height: 19px;
+	}
+
+	.asidebox_cart p {
+		font-size: 14px;
+	}
+
+
+	/**限時推薦新書 slider**/
+	.slick_content {
+		width: 880px;
+	}
+
+	.slick_bwcontent,
+	.slick_bwcontent2 {
+		width: 865px;
+	}
+
+	.slick_bwcontentbw {
+		width: 846px;
+
+	}
+
+
+	.listbox_main {
+		margin-left: 40px;
+		padding: 0;
+	}
+
+
+	.listbox_bwmain2 {
+		padding: 20px 0 0 0;
+		/**uodate:1016**/
+		margin: 0;
+
+	}
+
+	.book_package {
+		width: 142px;
+		display: block;
+		float: left;
+		margin: 0 auto;
+		padding: 0;
+
+
+	}
+
+
+	.bookdesc2 .bwbook_package {
+		width: 142px;
+		padding: 0;
+	}
+
+	.bookdesc2 .bwbookitem {
+		width: 110px;
+
+	}
+
+
+	/**讀者評分&留言**/
+	#bw_starr .starr5 {
+		float: left;
+		width: 72px;
+	}
+
+
+	#bw_starr .starr5_progress {
+		float: left;
+		width: 300px;
+	}
+
+
+	#bw_starr .starr5_num {
+		float: left;
+		width: 30px;
+	}
+
+	#bw_starr .starr_txt {
+		width: 250px;
+
+
+	}
+
+	#bw_starr .starr5_progress_review {
+		/**update:20170731 書評**/
+		width: 200px;
+	}
+
+	/**購物車**/
+	.cart_stepbor {
+		width: 170px;
+
+	}
+
+	.cart_topic {
+		margin-right: 0px;
+	}
+
+	.cart_step {
+		margin-right: 0px;
+	}
+
+
+	#listbox_cartmain,
+	#qpay_info {
+		/**update:+ 1123**/
+		padding: 0 20px 20px 20px;
+
+
+	}
+
+	#qpay_info .padbtm10 {
+		padding-bottom: 10px;
+	}
+
+
+	#listbox_cartmain .row_dot {
+		margin: 0;
+		padding: 0;
+	}
+
+	.rowmain_dot {
+		border-bottom: 1px dotted #acacac;
+	}
+
+	#listbox_cartmain .txt_vc {
+		height: 70px;
+
+	}
+
+	#listbox_cartmain .txt_vc3 {
+		height: 50px;
+		padding: 0 40px;
+	}
+
+	#listbox_cartmain .txt_vc input {
+		margin-top: 5px;
+	}
+
+	#listbox_cartmain .padtop20 {
+		/*step2用上方加寬*/
+		padding-top: 20px;
+	}
+
+
+	.cart_coupon img {
+		/*step2用coupon 長度變小*/
+		width: 170px;
+	}
+
+
+	/**購物車頁step2**/
+	.bw_wmid2 {
+		max-width: 1200px;
+
+	}
+
+	#bw_page .bw_main2,
+		/**update:1023**/
+	#bw_search .bw_main2,
+		/**update:1012**/
+	#bw_container .bw_main2 {
+		width: 879px;
+
+	}
+
+	#bw_search .pageorder {
+		width: 260px;
+		/** update:1027 **/
+	}
+
+	#bw_search .pageorder2 {
+		width: 200px;
+		/**update:1210 出版社用**/
+	}
+
+	#bw_container .pageorder2 {
+		width: 190px;
+		/**編輯推薦用 update:1223**/
+	}
+
+	.bw_rank .ranking_pg {
+		/**排行榜用  update:0308**/
+		margin: 0 0 4px 14px;
+
+
+	}
+
+
+	.select12 {
+		width: 180px;
+	}
+
+	#bw_container .select12 {
+		/**編輯推薦用 update:1224**/
+		width: 235px;
+		float: left;
+	}
+
+
+	.listbox_bwmaincart {
+		width: 879px;
+
+	}
+
+
+	.bwcart_pay {
+		width: 530px;
+		/** width:580px;  update:1119 文字變長**/
+	}
+
+	.bwcart_payinfo {
+		width: 296px;
+		/** width:250px; update:1119 文字變長**/
+
+	}
+
+	.listbox_bwmainbill .topic {
+		margin-top: -1px;
+		/** + update:1119**/
+
+	}
+
+	#qpay_bwmainbill .listbox_bwmainbill .topic {
+		padding: 0;
+		/** + update:1119**/
+
+	}
+
+
+	/**單書頁**/
+	#bw_bookdata .bookdata {
+		width: 585px;
+		/**width:585px; update:0122**/
+	}
+
+	#bw_bookdata .bookdata_review {
+		/**update:20170731 書評**/
+		width: 415px;
+	}
+
+	/**內容簡介**/
+	#bw_bookdata .topic_content {
+		/**update:1019**/
+		width: 620px;
+	}
+
+	#bw_bookdata .bookdata_review .booktitle .bwname,
+		/**update:20170731 書評**/
+	#bw_bookdata .bookdata .booktitle .bwname {
+		/**update:0203**/
+		width: 520px;
+	}
+
+	#bw_bookdata .bookdata_review h3,
+		/**update:20170731 書評**/
+	#bw_bookdata .bookdata h3 {
+		/**update:0203**/
+		width: 520px;
+	}
+
+
+	#bw_bookdata .bwbook_btn {
+		margin-bottom: 8px;
+	}
+
+	#bw_bookdata .bwbook_lable ul {
+
+	}
+
+	#bw_bookdata .bwbook_btn li a {
+		margin: 0;
+		padding: 0;
+	}
+
+
+	#bw_bookdata .bwbook_btn li {
+		width: 200px;
+		display: inline;
+		float: left;
+		margin: 0 2px 0 0;
+		padding: 5px 10px;
+
+
+	}
+
+	#bw_bookdata .bwbook_btnbuy,
+	#bw_bookdata .bwbook_btnrent,
+	#bw_bookdata .bwbook_btnrentno {
+		/**update:0729**/
+		border: 2px solid #ffa91c;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+
+		padding: 10px;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+		opacity: 1;
+		filter: alpha(opacity=100);
+		background-color: #ffffff;
+	}
+
+	#bw_bookdata .bwbook_btnrent {
+		border: 2px solid #ff9966;
+	}
+
+	#bw_bookdata .bwbook_btnrentno {
+		/**update:0729**/
+		border: 2px solid #bdbdbd;
+		color: #999999;
+	}
+
+	#bw_bookdata h3 {
+		font-size: 16px;
+	}
+
+
+	/**footer2* update:1012;
+    .footer2{
+        height:160px;
+    }
+    */
+	.footer_bwlogo2 {
+		height: 40px;
+
+	}
+
+	.footer_pay li {
+		font-size: 14px;
+	}
+
+	.footer_info2 li {
+		display: inline;
+		width: 120px;
+		padding: 0 5px;
+		border-right: 1px solid #333;
+		line-height: 20px;
+		font-size: 12px;
+	}
+
+	.footer_info2 ul {
+		padding: 0;
+	}
+
+	.footer_info2 .txt11 {
+		font-size: 11px;
+		line-height: 16px;
+	}
+
+
+	.bw_copyright_left {
+		width: 950px;
+		padding: 0px;
+
+	}
+
+	.bw_autwebsite_left {
+		margin-top: -35px;
+		/**update  :1026**/
+		margin-left: 20px;
+
+	}
+
+
+	/**搜韌頁用 upadte:1013**/
+	#bw_container .bw_pagination li,
+		/**編輯推薦用 update:1223**/
+	#bw_search .bw_pagination li {
+		padding: 0 2px;
+
+	}
+
+	#bw_search .pagebar {
+		width: 400px;
+		margin: 0;
+		padding: 0;
+
+	}
+
+	#bw_container .pagebar2,
+		/**編輯推薦用 update:1223**/
+	#bw_search .pagebar2 {
+		width: 420px;
+		margin: 0;
+		padding: 0;
+
+	}
+
+	#bw_search .bw_pagination li {
+		padding: 0 2px;
+
+	}
+
+
+	#bw_search .bookcover {
+		width: 185px;
+		height: 250px;
+	}
+
+	#bw_search .bookcover .bookitem img {
+		/**update:1117 +bookcover**/
+		float: left;
+		width: 150px;
+
+	}
+
+
+	#bw_search .bookdata {
+		width: 640px;
+	}
+
+	#bw_search .writerinfo,
+	#bw_search .bookinfo {
+		width: 445px;
+	}
+
+	#bw_search .bookdetail {
+		height: 126px;
+
+	}
+
+	.bookdesc2 .bwbook_package {
+		width: 142px;
+		padding: 0;
+
+	}
+
+	.bookdesc2 .bwbookitem {
+		width: 110px;
+
+	}
+
+
+	#bw_search0 .bookcover {
+		/**update:1117 搜尋0用**/
+		width: 104px;
+		height: 147px;
+		display: block;
+	}
+
+	#bw_search0 .lablename img {
+		/**update:1117 搜尋0用**/
+		height: 14px;
+	}
+
+	/*個人專頁*/
+	#bw_user .myqbox {
+		/**update:1229**/
+		width: 800px;
+		margin: 0 auto 70px auto;
+	}
+
+	#bw_user .myqbox2 {
+		width: 800px;
+		margin: 0 auto 50px auto;
+	}
+
+
+	#bw_user .myqdetail {
+		float: left;
+		width: 620px;
+	}
+
+
+	/**集結頁-單一出版社 update:1210**/
+	#bw_search .pubdesc {
+		padding: 25px 25px 10px 25px;
+		/**update:1221**/
+		display: block;
+
+	}
+
+
+	#bw_search .pubdata {
+		/**集結頁-單一出版社 update:1210**/
+		width: 650px;
+	}
+
+	.ad6 {
+		/**集結頁-出版社一覽 update:1221**/
+
+		height: 244px;
+		/**update:1201**/
+	}
+
+
+	.ad6 h1 {
+		top: 5px;
+		left: 20px;
+	}
+
+	.ad6 h2 {
+		top: 15px;
+		left: 20px;
+
+	}
+
+	/**集結頁-出版社一覽 update:1221**/
+	.mainpub_more {
+		margin-left: 8px;
+		display: block;
+		padding-bottom: 20px;
+
+	}
+
+
+	.banner_package {
+		/**集結頁-主題&amp;活動列表- update:1222**/
+		padding: 20px 29px;
+		height: 160px;
+
+	}
+
+	/**集結頁-推薦的主題&amp;活動 update:1223**/
+	.mainbanner_more {
+		min-height: 800px;
+		margin-left: 8px;
+		display: block;
+		padding-top: 10px;
+		padding-bottom: 20px;
+
+	}
+
+
+	/**媒體資料 update:0125**/
+	#resources .resources_box .rbox {
+		max-width: 830px;
+	}
+
+	.img_box + .img_box {
+		margin-left: 2%;
+	}
+
+
+	/**upodate:0122**/
+	@media screen and (max-width: 1279px) {
+
+		#bw_bookdata .bookdata {
+			width: 585px;
+
+		}
+
+		#bw_bookdata .bookdata_review {
+			/**update:20170731 書評**/
+			width: 610px;
+
+		}
+
+		#bw_user .bw_main2,
+			/**update:1202**/
+		#bw_page .bw_main2,
+			/**update:1023**/
+		#bw_search .bw_main2,
+			/**update:1012**/
+		#bw_container .bw_main2 {
+			width: 879px;
+		}
+
+
+		#bw_search .pubdata {
+			width: 640px;
+		}
+
+		#bw_search .pageorder_rank {
+			/**排行榜 update:0308**/
+			float: right;
+		}
+
+		#bw_searchdata .bookdata .booktitle .bwname,
+			/**update:0309 搜尋詳細用**/
+		#bw_rankdata .bookdata .booktitle .bwname {
+			/**update:0309**/
+			width: 574px;
+		}
+
+		#bw_rankdata .bwname .rankno_name {
+			/**update:0309**/
+			width: 544px;
+
+		}
+
+
+	}
+
+
+
+
+
+	@media screen and (max-width: 1200px) {
+
+		/**上方選單**/
+		.navbar-nav > li > a {
+			padding: 15px 10px;
+		}
+
+		.up18color span a {
+			/**限制級選單**/
+			padding: 15px 15px 12px 15px;
+		}
+		
+		/**購物車頁step2**/
+		.bw_wmid2 {
+			width: 1000px;
+
+		}
+
+
+		#bw_bookdata .bookdata {
+			/**upodate:0120**/
+			width: 380px;
+
+		}
+
+		#bw_bookdata .bookdata_review {
+			/**update:20170731 書評**/
+			width: 410px;
+		}
+
+		#bw_bookdata .bookdata_review .booktitle .bwname,
+			/**update:20170731 書評**/
+		#bw_bookdata .bookdata .booktitle .bwname {
+			/**update:0203**/
+			width: 320px;
+		}
+
+		#bw_rankdata .bwname .rankno_name {
+			/**update:0309**/
+			width: 368px;
+
+		}
+
+		#bw_bookdata .bookdata_reivew h3,
+			/**update:20170731 書評**/
+		#bw_bookdata .bookdata h3 {
+			/**update:0203**/
+			width: 320px;
+		}
+
+
+		#bw_user .bw_main2,
+			/**update:1202**/
+		#bw_page .bw_main2,
+			/**update:1023**/
+		#bw_search .bw_main2,
+			/**update:1012**/
+		#bw_container .bw_main2 {
+			/* width: 679px; */
+			width: 100%;
+		}/*20221118平板*/
+
+		#bw_pr .bw_aside2, 
+		#bw_page .bw_aside2, 
+		#bw_search .bw_aside2, 
+		#bw_container .bw_aside2,
+		#bw_user .bw_aside2 { 
+			width: 100%;
+		}/*20221118平板*/
+
+		.catebar a,
+		.navbar-default a {
+			font-size: 17px;
+		}
+
+		/**search input**/
+		.input_border0 {
+			width: 105px;
+		}
+
+		.listbox_bwmaincart {
+			width: 679px;
+
+		}
+
+
+		.bwcart_pay {
+			width: 400px;
+			float: left;
+			display: block;
+			padding: 10px;
+
+		}
+
+		.bwcart_payinfo {
+			width: 230px;
+			float: right;
+			display: block;
+			padding: 10px 0;
+
+
+		}
+
+
+		.slick_bwcontent2 {
+			width: 620px;
+		}
+
+
+		.slick_bwcontentbw {
+			width: 658px;
+			margin-left: 10px;
+			padding: 0 0 0 0;
+
+
+		}
+
+		.lablename img {
+			margin-right: 4px;
+		}
+
+		/**update:1012**/
+		.bw_autwebsite_left {
+			float: right;
+			margin-top: -100px;
+			padding-right: 10px;
+
+		}
+
+		/**搜尋頁用 upadte:1013**/
+		#bw_search .bookcover {
+			width: 150px;
+
+		}
+
+		/**搜尋頁-出版社用 upadte:1013**/
+		#bw_container .pagebar2 ul,
+			/**編輯推薦用 update:1223**/
+		#bw_search .pagebar2 ul {
+			margin-left: 0;
+			padding-left: 0;
+
+		}
+
+		#bw_search .pageorder {
+			width: 245px;
+
+		}
+
+
+		#bw_search .pagebar2 {
+			width: 375px;
+			/*border:1px solid #333;*/
+
+		}
+
+		#bw_container .pagebar2 {
+			/**編輯推薦用 update:1224**/
+			width: 375px;
+			/*border:1px solid #333;*/
+
+		}
+
+		#bw_container .pagebar2 nav {
+			/**編輯推薦用 update:1224**/
+			margin-left: 0px;
+		}
+
+		/**集結頁-編輯推薦 update:1224**/
+		.recommandlist .recommend_info {
+			width: 425px;
+
+		}
+
+		.recommandlist .lineset {
+			/**集結頁-編輯推薦 update:1224**/
+			height: 234px;
+
+		}
+
+
+		#bw_search .publogo {
+			width: 140px;
+			height: 140px;
+			line-height: 140px;
+		}
+
+		#bw_search .publogo img {
+			width: 120px;
+
+		}
+
+		#bw_search .select12 {
+			font-style: 12px;
+			width: 132px;
+			display: block;
+			float: left;
+			padding-left: 10px;
+			margin: 0;
+		}
+
+
+		#bw_search .pageorder2 {
+			width: 135px;
+			display: block;
+			float: left;
+			padding: 0;
+			margin: 0;
+
+		}
+
+
+		#bw_search .pubdata {
+			/**集結頁-單一出版社 update:1210**/
+			width: 465px;
+		}
+
+		.banner_package {
+			/**集結頁-主題&amp;活動列表- update:1222**/
+			padding: 20px 45px;
+
+
+		}
+
+
+		#bw_search0 .bookitem0 {
+			width: 100px;
+			/* *update:1118 解決bookside在書封左邊問題* */
+			float: left;
+
+		}
+
+
+		#bw_search0 .book_package {
+			width: 148px;
+		}
+
+		#bw_search .ordericon,
+		#bw_search .ordericon2,
+		#bw_search .ordericon3 {
+			width: 52px;
+			overflow: hidden;
+
+		}
+
+		#bw_search0 .bookcover {
+			width: 110px;
+			height: 150px;
+			float: left;
+		}
+
+		#bw_search .bookcover .bookitem img {
+			float: left;
+			width: 120px;
+		}
+
+		#bw_search .bookdata {
+			width: 460px;
+		}
+
+
+		#bw_search .writerinfo,
+		#bw_search .bookinfo {
+			width: 260px;
+		}
+
+		#bw_search .bwbook_lable {
+			width: 120px;
+			margin-bottom: 15px;
+			float: right;
+			text-align: right;
+
+
+		}
+
+		#bw_search .bookbtn {
+			width: 180px;
+			float: right;
+			display: block;
+			font-size: 14px;
+		}
+
+		#bw_search .bookdetail {
+			height: 124px;
+			overflow: hidden;
+
+		}
+
+		#bw_searchdata .bookdata .booktitle .bwname,bw_aside2
+			/**update:0309 搜尋詳細用**/
+		#bw_rankdata .bookdata .booktitle .bwname {
+			/**update:0309**/
+			width: 400px;
+		}
+
+		#bw_searchdata .writerinfo,
+			/**update:0309 搜尋詳細用**/
+		#bw_rankdata .writerinfo {
+			/**update:0309**/
+			width: 320px;
+		}
+
+		/**編輯推薦用 update:1223**/
+		#bw_container .pageorder2 {
+			display: none;
+		}
+
+		.bookdesc2 .bwbook_package {
+			width: 127px;
+			padding: 0;
+
+		}
+
+		.bookdesc2 .bwbookitem {
+			width: 108px;
+
+		}
+
+		.listbox_main2_btn_prev {
+			left: -10px;
+
+		}
+
+		.listbox_main2_btn_next {
+			right: -22px;
+
+
+		}
+
+		/**綁定快捷付款服務**/
+		#bw_qpay .qpaybox {
+			width: 330px;
+			margin: 0 28px;
+		}
+
+
+		#bw_qpay .qpay_icon {
+			padding: 15px;
+		}
+
+		#bw_qpay .itemcenter {
+			width: 800px;
+
+		}
+
+		#bw_qpay .qpaybox2 li {
+			width: 230px;
+			height: 230px;
+			text-align: center;
+			border-radius: 115x;
+			-webkit-border-radius: 115px;
+			-moz-border-radius: 115px;
+			padding: 5px;
+			margin: 0 14px 10px 14px;
+
+		}
+
+		#bw_qpay .qpaybox2 li:nth-child(4) {
+			margin-left: 145px;
+
+		}
+
+		/*個人專頁*/
+		#bw_user .myqdetail {
+			/*1228update**/
+			width: 420px;
+		}
+
+		#bw_user .myqbox {
+			/**update:1229**/
+			width: 600px;
+
+		}
+
+		#bw_user .myqbox2 {
+			width: 600px;
+
+		}
+
+		#bw_user .bw_form {
+			/**update:20170502**/
+			height: 120px;
+		}
+
+		#bw_user .point_gray,
+		#bw_user .point_detail {
+			/**update:20170502**/
+			height: 80px;
+		}
+
+		/*--BOOKS HOVER-----------------*/
+		/*--bookItemHover--*/
+		.bwbook_package > .bookItemHover {
+			width: 127px;
+		}
+	}
+
+
+
+
+	@media screen and (max-width: 1024px) {
+
+		/*左右滑動按鈕位置 update:1202*/
+		.listbox_main2_btn_next {
+			right: -12px;
+		}
+
+
+		/**搜尋頁**/
+		#bw_search .select12 {
+			font-style: 12px;
+			width: 110px;
+			display: block;
+			float: left;
+			padding-left: 10px;
+			margin: 0;
+
+		}
+
+		#bw_search .pageorder {
+			width: 170px;
+			float: right;
+
+		}
+
+
+		#bw_search .pagebar {
+			width: 360px;
+			float: left;
+		}
+
+
+		#bw_search .pagebar2 {
+			width: 375px;
+			display: block;
+			float: left;
+			/*border:1px dotted #f00;*/
+		}
+
+
+		#bw_container .pagebar2 {
+			/**編輯推薦用 update:1224**/
+			width: 375px;
+			display: block;
+			float: left;
+
+		}
+
+
+		#bw_search .pageorder2 {
+			width: 135px;
+			display: block;
+			float: left;
+			padding: 0;
+			margin: 0;
+
+		}
+
+
+		#bw_search .pagebar ul {
+			margin: 0 0 0 0;
+			padding: 4px 0 0 0;
+
+		}
+
+		#bw_search .btns {
+			padding: 9px 20px;
+		}
+
+
+		#bw_search .bw_pagination li a {
+			padding: 2px 6px;
+
+
+		}
+
+		#bw_search .ordericon,
+		#bw_search .ordericon2,
+		#bw_search .ordericon3 {
+			width: 52px;
+			overflow: hidden;
+
+		}
+
+
+		/*中間內容頁*/
+		.bw_wmid {
+			min-width: 1004px;
+			margin: 0 auto;
+		}
+
+		.bw_wmid2 {
+			/*20221118平板*/
+			/* min-width: 994px; */
+			width: 100%;
+			min-width: 100%;
+		}
+
+		#bw_page .bw_main2,
+			/**update:1023**/
+		#bw_search .bw_main2,
+			/**update:1012**/
+		#bw_container .bw_main2 {
+			/**update:1007**/
+			width: 679px;
+
+		}
+
+		#bw_page .bw_main2 .minh,
+		#bw_container .bw_aside2 .minh {
+			min-height: 580px;
+		}
+
+
+		/**出版社用**/
+		.listbox_bwmain {
+			padding: 0 18px;
+		}
+
+		.pub_package {
+			padding: 20px 8px;
+
+		}
+
+		.board_more {
+			display: block;
+			width: 250px;
+
+
+		}
+
+
+		/**集結頁-出版社一覽 update:1222**/
+		.mainpub_more {
+			padding-bottom: 20px;
+
+		}
+
+		.recommandlist .bookdetail {
+			height: 206px;
+
+		}
+
+		#listbox_cartmain .txt_vc {
+			margin-top: 10px;
+		}
+
+		#listbox_cartmain .txt_vc img {
+			/**update:1006**/
+			height: 70px;
+
+		}
+
+		/*購物車step1用*/
+		/**垂直水平置中 update:1002**/
+		#listbox_cartmain .vboxs1 {
+			height: 120px;
+		}
+
+		#listbox_cartmain .covers1 {
+			padding-top: 20px;
+			margin: 0;
+		}
+
+		#listbox_cartmain .align {
+			/**勾選標題置左**/
+			text-align: left;
+		}
+
+		/*購物車step2用*/
+		.listbox_bwmaincart {
+			width: 679px;
+
+		}
+
+		.bwcart_pay {
+			width: 370px;
+
+		}
+
+		.bwcart_payinfo {
+			width: 230px;
+
+		}
+
+		.listbox_bwmainbill .topic {
+			padding: 3px 0;
+
+		}
+
+
+		/**上方選單**/
+		#bw_topbar .iconcolor_number {
+			color: #fff;
+			font-size: 9px;
+			letter-spacing: -2px;
+			padding-right: 2px;
+			text-align: center;
+
+
+		}
+
+		#bw_topbar .iconcolor_red {
+			border: 0;
+		}
+
+		.catebar a,
+		.navbar-default a {
+			font-size: 17px;
+		}
+
+
+		/*中間內容頁*/
+		/**購物流程**/
+		.cartbox {
+			margin: 0 16px 10px 10px;
+
+		}
+
+		.listbox_main {
+			margin-left: 27px;
+		}
+
+
+		.cart_coupon img {
+			/*step2用coupon 長度變小*/
+			width: 130px;
+		}
+
+
+		/**單書頁**/
+		f #writerinfo {
+			width: 400px;
+		}
+
+		/**內容簡介**/
+		#bw_bookdata .topic_content {
+			width: 430px;
+		}
+
+
+		#bw_bookdata .bwbook_lable {
+			float: left;
+			text-align: left;
+		}
+
+
+		#bw_bookdata .bwbook_sale {
+			width: 250px;
+			margin: 0;
+			padding: 0;
+		}
+
+		#bw_bookdata .bwbook_btn li {
+			width: 150px;
+			padding: 5px 5px;
+
+		}
+
+		#bw_bookdata .social_share {
+			float: left;
+			padding: 10px 0;
+		}
+
+		#bw_bookdata .bookinfo_more ul {
+			width: 250px;
+
+		}
+
+
+		.listbox_bwmain2 {
+			padding: 20px 0 0 0;
+		}
+
+		.slick_content {
+			width: 650px;
+		}
+
+		.slick_bwcontent,
+		.bw_guide .bwlogo img {
+			width: 200px;
+			margin-bottom: 10px;
+
+		}
+
+		.bw_guide li {
+			line-height: 24px;
+			font-size: 14px;
+			padding: 10px 0;
+
+		}
+
+		/**search input**/
+		.input_border0 {
+			width: 105px;
+		}
+
+		#listbox_cartmain .txt_vc3 {
+			height: 50px;
+			padding: 0 25px;
+		}
+
+
+		#bw_bookdata .bookcover {
+			width: 230px;
+		}
+
+
+		#bw_bookdata .bookinfo_more ul {
+			width: 450px;
+		}
+
+		#bw_bookdata .starr_right {
+			float: right;
+			width: 200px;
+		}
+
+		/**內容簡介**/
+		#bw_bookdata .topic_content {
+			width: 425px;
+		}
+
+
+		/**購物車側欄**/
+		.item_point_arrowup {
+			margin: 0 102px;
+		}
+
+		/**update:1012**/
+		.bw_autwebsite_left {
+			float: right;
+			margin-top: -90px;
+			padding-right: 10px;
+		}
+
+		.bw_autwebsite_left img {
+			width: 60px;
+		}
+
+		.footer_bwlogo2 {
+			width: 280px;
+
+		}
+
+		/**綁定快捷付款服務p2 update:1216**/
+		#qpay_info .qpayinfo_img,
+		#user_qpay .qpayinfo_img {
+			width: 100px;
+		}
+
+		#qpay_info .qline,
+		#user_qpay .qline
+
+			/** update:1216**/
+		{
+			padding-top: 10px;
+		}
+
+
+		/**個人專頁 update:1216**/
+		#user_qpay .qspe {
+			padding-right: 130px;
+		}
+
+		#bw_user .upaybtn_check {
+			width: 280px;
+		}
+
+		/**購買儲值金 update:1204**/
+		#bw_coin .itemcenter {
+			margin: 0 auto;
+			width: 880px;
+		}
+
+		#bw_coin .itemcenter .marlf {
+			margin-left: 30px;
+			margin-top: -10px;
+
+
+		}
+
+		#bw_coin .itemcenter h4 {
+			font-size: 14px;
+			line-height: 26px;
+
+		}
+
+
+		#bw_coin .coinbox {
+		}
+
+		#bw_coin .itemcenter2 {
+			width: 880px;
+			/*border:1px solid #ccc;*/
+
+		}
+
+		#bw_coin .coinbox li {
+			margin-right: 8px;
+
+		}
+
+		#bw_coin .coinbox li:nth-child(3) {
+			margin-right: 0;
+
+		}
+
+		#bw_coin .coinbox li:nth-child(2) {
+			margin-right: 8px;
+
+		}
+
+		#bw_coin .coinbox li:nth-child(4) {
+			margin-left: 144px;
+
+		}
+
+
+		.stepdl .cont .txt {
+			width: 320px;
+
+		}
+
+		.stepdl .cont {
+			width: 480px;
+		}
+
+		.stepdl .cont h1 {
+			font-size: 16px;
+			padding: 0;
+			margin: 0;
+		}
+
+
+	}
+
+
+	.bw_step .bw_step_img {
+		max-width: 742px;
+	}
+
+	.creataccount .bw_step_img {
+		max-width: 742px;
+		/* update:0127*/
+	}
+
+	.normalaccount .bw_step_img {
+		max-width: 742px;
+	}
+}

@@ -1,0 +1,470 @@
+@charset "utf-8";
+:root { 
+    --cisOrange: #f29600;
+    --cisBrown: #933f00;
+    --cisBlueGreen: #82cbd1;
+    --cisPeach: #e3007f;
+    --cisBlue: #009FE8;
+    --cisBlack: #231815;
+
+    --gray: #666666;
+    --grayLight: #E4E4E4;
+    --grayWhite: #f8f8f8;
+    --red: #D61518;
+
+    --txt-3xs: 12px;
+    --txt-2xs: 13px;
+    --txt-xs: 14px;
+    --txt-s: 15px;
+    --txt-m: 16px;
+    --txt-l: 18px;
+    --txt-xl: 20px;
+    --txt-2xl: 24px;
+
+    --lv0: #8c94b1;
+    --lv1: #cf9581;
+    --lv2: #ad93ad;
+    --lv3: #75969d;
+    --lv4: #404f79;
+    --lv5: #b68328;
+    --lv6: #864d46;
+    --lv7: #221714;
+
+    --lv0Deep: #5e6684;
+    --lv1Deep: #b25652;
+    --lv2Deep: #775d77;
+    --lv3Deep: #3f6871;
+    --lv4Deep: #1a2749;
+    --lv5Deep: #855e18;
+    --lv6Deep: #5f2720;
+    --lv7Deep: #494949;
+}
+
+.alink{ color: var(--cisBlue); text-decoration: underline;}
+.alink:hover, .alink:focus{ color: var(--cisBlue) !important;}
+
+.mNOpcIN, .mNOpcBL, .mNOpcINBL{ display: none;}
+.pcNOmIN{ display: inline;}
+.pcNOmBL{ display: block;}
+.pcNOmINBL{ display: inline-block;}
+
+.infoTbImpor{ font-size: var(--txt-l); color: var(--red);}
+.infoTbImpor2{ font-size: var(--txt-s); color: var(--red);}
+
+.colorPeach{ color: var(--cisPeach);}
+.txt2XS{ font-size: var(--txt-2xs);}
+
+.flx-m1{ flex: 1;}
+.flx-m2{ flex: 2;}
+.flx-m3{ flex: 3;}
+
+.txt-r{ text-align: right;}
+
+/*會員獎勵說明*/
+.vCenter{ align-self: center;}
+.aCenter{ text-align: center;}
+.tBold{ font-weight: bold;}
+
+/*--新頁面內容/fastpay--*/
+.rwdWrapper{ width: 100%; min-height: 100%; font-family: Microsoft JhengHei,"Century Gothic",Arial,sans-serif; color: #666; line-height: 1.5; background-color: #F8F8F8;}
+
+/*--右側欄內容--*/
+.rwdWrapper2{ font-family: Microsoft JhengHei,"Century Gothic",Arial,sans-serif;}
+.rwdWrapper2 li{ list-style: none;}
+.rwdWrapperFull{ max-width: 1580px; margin: 0 auto 10px auto; padding: 20px 0; background-color: #fff;}
+
+.rwdWrapper input, .rwdWrapper button, .rwdWrapper textarea, .rwdWrapper select, .rwdWrapper2 input, .rwdWrapper2 button, .rwdWrapper2 textarea, .rwdWrapper2 select,
+.popBox input, .popBox button, .popBox textarea, .popBox select{ box-sizing:border-box;}/*x-rwdWrapper*/
+
+.rwdWrapper input, .rwdWrapper select, .rwdWrapper2 input, .rwdWrapper2 select,
+.popBox input, .popBox select{ appearance: none; -webkit-appearance: none; -moz-appearance: none; max-width: 100%; font-size: var(--txt-m);}/*x-rwdWrapper*/
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;}/*remove arrow*/
+input[type="number"]{ -moz-appearance: textfield;}/*remove arrow*/
+
+/*inputCheckStyle核取方塊--------------- */
+.inputCheckStyle{ font-size: var(--txt-m); cursor: pointer; user-select: none;}
+.inputCheck{ opacity: 0; position: absolute;}
+.inputCheck[type="checkbox"] + span{ position: relative; top: -1px; display: table; width: 24px; height: 24px; margin-right: 5px; background-color: #ffffff; border: var(--grayLight) 2px solid; vertical-align: middle; border-radius: 2px;}
+.inputCheck[type="checkbox"]:checked + span:after{ content: ""; display: block; position: absolute; left: 0; right: 0; bottom: 5px; width: 8px; height: 13px; margin: 0 auto; border: var(--cisBlueGreen) solid; border-width: 0 3px 3px 0; transform: rotate(45deg);}
+
+/*selectStyle下拉選項---------------*/
+.selectStyleBox{ position: relative; height: 45px;}
+.selectStyleArrow{ position: absolute; top: 0; bottom: 0; right: 15px; height: 14px; margin: auto 0; font-size: var(--txt-xs); pointer-events: none;}
+.selectStyle{ position: relative; height: 45px; padding: 4px 40px 4px 10px; border: var(--grayLight) 1px solid; border-radius: 3px; outline: none; cursor: pointer; transition-property: border; transition-duration: 0.4s;}
+.selectStyle:hover,.selectStyle:focus{ border-color: var(--cisOrange);}
+
+/*input文字輸入框---------------*/
+.inputTextStyle{ height: 45px; padding: 0 10px; border: var(--grayLight) 1px solid;  border-radius: 3px; outline: none; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; transition-property: border; transition-duration: 0.4s;}
+.inputTextStyle:hover, .inputTextStyle:focus{ border-color: var(--cisOrange);}
+.inputTextStyle:disabled,.selectStyle:disabled{ background-color: var(--grayWhite); color: #000; cursor: default;}
+.inputTextStyle:disabled:hover,.selectStyle:disabled:hover{ border: var(--grayLight) 1px solid;}
+
+/*btnIcon:iconFont + btnFin:文字功能鈕---------------*/
+.btnStyleTxt{ border: 0; background-color: transparent; line-height: 1; appearance: none; -webkit-appearance: none; -moz-appearance: none;}
+.btnFin{ display: inline-block; padding: 10px; font-size: var(--txt-xs); color: var(--cisBlue); font-weight: bold; cursor: pointer;}
+.btnFin.red{ color: var(--red);}
+
+.btnIcon{ display: inline-block; padding: 10px; font-size: var(--txt-xl); color: var(--cisBlueGreen); cursor: pointer;}
+.btnIcon input{ display: none;}
+.btnFin:hover, .btnFin:focus, .btnIcon:hover, .btnIcon:focus{ color: var(--cisOrange);}
+
+/*iconFont onlyIcon*/
+.btnIcon.onlyIcon{ font-size: 0;}
+.btnIcon.onlyIcon [class^="bwi-"]{ font-size: var(--txt-xl);}
+
+.rwdWrapper2 input.btnFin{ width: auto; padding: 10px; font-size: var(--txt-xs);}/*x-all*/
+
+/*switch切換鈕---------------*/
+.switchBtn{ display:none;}
+.switchLabel{ position: relative; display: inline-block; width: 52px; height: 25px; border-radius: 100px; background-color: var(--grayLight); cursor: pointer;}	
+.switchCircle{ position: absolute; left: 6px; display: inline-block; width: 17px; height: 17px; margin-top: 4px; border-radius: 100px; background-color: #fff; transition: all 0.3s;}
+.switchBtn:checked ~ label{ background-color: var(--cisBlueGreen);}
+.switchBtn:checked ~ label .switchCircle{ left: 30px;}
+
+/*btnStyle按鈕---------------*/
+.btnArea{ width: 100%; display: flex;}
+.btnStyle{ flex:1; display: inline-block; border: 0; outline: none; vertical-align: top; line-height: 1; cursor: pointer;
+ /*min-width: 100px;*/ height: 45px; margin-right: 10px; padding: 14px 15px 13px 15px; color: #fff; font-size: var(--txt-m); text-align: center; text-decoration: none; 
+ border-radius: 3px; box-shadow: #ccc 1px 1px 2px, inset rgba(255,255,255,0.2) 1px 2px 3px; /*vertical-align: middle;*/}
+.btnStyle:hover{ box-shadow: #ccc 1px 1px 2px, inset rgba(0, 0, 0, 0.1) 3px 2px 10px;}
+
+/*inputTxr + Btn / discount_master*/
+.txtNbtn{ position: relative;}
+.txtNbtn .btnStyle{ position: absolute; right: 0; margin-right: 0; border-radius: 0 3px 3px 0;}
+
+/*blueGreen*/
+.btnStyle.blueGreen{ background-color: #50A8AA; border-bottom: #308587 4px solid;}
+.btnStyle.blueGreen:hover{ background-color: #4e989a;}
+.btnStyle.blueGreen:active{ background-color: #50A8AA;}
+
+/*popBlack*/
+.btnStyle.popBlack{ background-color: var(--cisBlack); box-shadow: none;}
+.btnStyle.popBlack:hover{ background-color: #363636;}
+
+/*popWhite*/
+.btnStyle.popWhite{ background-color: #fff; color: var(--cisBlack); border: var(--cisBlack) 1px solid; box-shadow: none;}
+.btnStyle.popWhite:hover{ background-color: var(--grayWhite);}
+
+/****會員獎勵制度------------------------------------------*/
+.memberLv{ overflow: hidden; display: inline-block; padding-left: 10px; color: #fff; font-weight: bold; border-radius: 3px;}
+.lvNum{ display: inline-block; margin-left: 6px; padding: 0 6px;}
+
+.lvInfoNum{ font-size: var(--txt-xl); font-weight: bold;}
+.lvInfoNum.lv0{ color: var(--lv0);}
+.lvInfoNum.lv1{ color: var(--lv1);}
+.lvInfoNum.lv2{ color: var(--lv2);}
+.lvInfoNum.lv3{ color: var(--lv3);}
+.lvInfoNum.lv4{ color: var(--lv4);}
+.lvInfoNum.lv5{ color: var(--lv5);}
+.lvInfoNum.lv6{ color: var(--lv6);}
+.lvInfoNum.lv7{ color: var(--lv7);}
+
+/*lvColor*/
+.memberLv.lvCalc{ padding: 2px 8px; background-color: #7c7c7c;}
+
+.memberLv.lv0{ background-color: var(--lv0);}
+.memberLv.lv0 .lvNum{ background-color: var(--lv0Deep);}
+
+.memberLv.lv1{ background-color: var(--lv1);}
+.memberLv.lv1 .lvNum{ background-color: var(--lv1Deep);}
+    
+.memberLv.lv2{ background-color: var(--lv2);}
+.memberLv.lv2 .lvNum{ background-color: var(--lv2Deep);}
+
+.memberLv.lv3{ background-color: var(--lv3);}
+.memberLv.lv3 .lvNum{ background-color: var(--lv3Deep);}
+
+.memberLv.lv4{ background-color: var(--lv4);}
+.memberLv.lv4 .lvNum{ background-color: var(--lv4Deep);}
+
+.memberLv.lv5{ background-color: var(--lv5);}
+.memberLv.lv5 .lvNum{ background-color: var(--lv5Deep);}
+
+.memberLv.lv6{ background-color: var(--lv6);}
+.memberLv.lv6 .lvNum{ background-color: var(--lv6Deep);}
+
+.memberLv.lv7{ background-color: var(--lv7);}
+.memberLv.lv7 .lvNum{ background-color: var(--lv7Deep);}
+
+/*lvBarColor*/
+.lvSpeedBar .lv0{ background: var(--lv0); background: linear-gradient(135deg,  var(--lv0) 0%,var(--lv1) 100%);}
+.lvSpeedBar .lv1{ background: var(--lv1); background: linear-gradient(135deg,  var(--lv1) 0%,var(--lv2) 100%);}
+.lvSpeedBar .lv2{ background: var(--lv2); background: linear-gradient(135deg,  var(--lv2) 0%,var(--lv3) 100%);}
+.lvSpeedBar .lv3{ background: var(--lv3); background: linear-gradient(135deg,  var(--lv3) 0%,var(--lv4) 100%);}
+.lvSpeedBar .lv4{ background: var(--lv4); background: linear-gradient(135deg,  var(--lv4) 0%,var(--lv5) 100%);}
+.lvSpeedBar .lv5{ background: var(--lv5); background: linear-gradient(135deg,  var(--lv5) 0%,var(--lv6) 100%);}
+.lvSpeedBar .lv6{ background: var(--lv6); background: linear-gradient(135deg,  var(--lv6) 0%,var(--lv7) 100%);}
+
+.lvSpeedBar{ overflow: hidden; width: 100%; height: 10px; margin-top: 3px; border: var(--grayLight) 1px solid; border-radius: 10px;}
+.lvSpeedBar span{ display: block; height: 100%; background-color: var(--cisBlueGreen); border-radius: 10px 0 0 10px;}
+.topBarLv .lvSpeedBar{ margin-top: 1px;}
+
+/****footerRwd------------------------------------------*/
+.footerRwd{ clear: both; box-sizing: border-box; width: 100%; padding: 30px 5% 2% 5%; text-align: left; background-color: #fff; color: #333; font-family: Microsoft JhengHei,"Century Gothic",Arial,sans-serif;}
+.footerRwd ul{ margin: 0;}/*bootstrap*/
+.footerRwd ul li{ list-style: none;}
+.footerRwd a, .footerRwd a:hover{ text-decoration: none;}
+.footerW{ border-top: var(--cisBlack) 3px solid;}
+.mapTitle{ display: flex; justify-content: space-between; align-items: center; height: 45px; margin: 10px 0; padding-left: 14px;  font-size: var(--txt-m); font-weight: bold; background-color: var(--grayWhite); border-radius: 3px;}
+.mapTitle .arrow{ padding: 14px; color: #CFCFCF;}
+
+/*--mapList--*/
+.mapList{ display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0; transition: padding-bottom 1.2s, margin-bottom  1.2s;}
+.mapList > li{ width: calc(50% - 4px); margin-bottom: 8px; font-size: var(--txt-xs); background-color: #F1F1F1; border-radius: 3px; color: #444;}
+.mapList > li > a{ display: block; padding: 10px 12px; color: #444;}
+
+.mapList > li.mapApp{ width: 100%; padding: 10px 12px; display: flex; align-items: center; flex-wrap: wrap;}
+.mapList > li.mapApp a{ box-sizing: border-box;  padding: 4px 4px 4px 0;}
+.mapList > li.mapApp a img{ height: 35px;}
+.mapAppTitle{ padding:5px 15px 5px 0;}
+
+/*--mapContact--*/
+.mapContact{ margin-top: 10px; padding: 5px 0 5px 0; background-color: var(--grayWhite); border-radius: 3px;}
+.mapContact .mapTitle{ height: auto; padding-bottom: 5px; background-color: transparent;}
+.mapContact .mapList{ display: block; padding: 0 14px;}
+.mapContact .mapList > li{ display: inline-block; width: auto; background-color: transparent;}
+.mapContact .mapList > li > a{ margin-right: 5px; padding: 6px 14px; background-color: var(--gray); color: #fff; border-radius: 3px;}
+.mapContact .mapList > li.mapContactTime{ width: 100%;}
+
+/*mapJoin*/.mapList > li.mapJoin > a{ background-color: var(--gray); color: #fff; border-radius: 3px;}
+
+/*--Social + Copyright--*/
+.footerSocial{ display: flex; max-width: 336px; padding: 25px 0 15px 0;}
+.footerSocial > li{ flex: 1; margin: 0 2%;}
+.footerSocial img{ width: 100%;}
+.footerCopyright{ padding: 0 2%; border-top: var(--grayLight) 1px solid;}
+.footerLogo{ width: 200px; margin-top: 18px; margin-bottom: 12px;}
+.footerCopyright p{ font-size: var(--txt-3xs); line-height: 1.4 !important; border: 0;/*errorPage*/ padding: 0;/*errorPage*/}
+
+/*--mapOpen--*/
+.mapOpen .mapTitle{ background-color: transparent;}
+.mapOpen .arrow{ transform: rotate(180deg); color: #949494;}
+.mapOpen .mapList{ margin-bottom: 20px; padding-bottom: 15px; border-bottom: var(--grayLight) 1px solid;}
+
+.loaderMargin{ margin: 0 20% !important;}
+
+/*20221019------------------------------------------*/
+.text-right { text-align: right;}
+ul.bw_list{ padding-left: 0; margin-top: 0; margin-bottom: 0;}
+
+/*login-------------------*/
+/*記住帳號+忘記密碼*/
+.loginForget{ display: flex; font-size: 14px;}
+.loginForget a{ padding-left: 8px; text-decoration: none;}
+
+/*登入鈕*/.loginBtnSet .btn{ /*width: 100%;*/ font-size: 1.1rem;}
+/*快速登入鈕*/.p-outsideLogin__list{ padding-left: 0;}
+/*apple id*/#appleid-signin svg { vertical-align: inherit;}
+/*登入注意事項*/.loginform p{ font-size: 15px;}
+
+/*register-------------------*/
+.register_ad img{ width: 100%;}
+.regiGroup.form-group{ width: 100%; text-align: left; font-weight: bold;}
+.form-group.inline{ display: flex;}
+.form-group label { padding-right: 18px;}
+
+/*項目標題*/.regiItem{ width: 119px;}
+/*項目內容*/.regiCon{ width: 100%;}
+/*年月日*/.regiGroup select {width: 155px; height: 40px; margin-bottom: 10px; margin-right: 5px; padding-left: 8px; color: #555; background-color: #fff; border: 1px solid #ccc; border-radius: 4px;}
+
+/*同意*/
+.form-group.regiRule{ width: 100%;}
+.form-group.regiRule p{ text-align: left;}
+
+/*customer-------------------*/
+/*客服訊息tab*/
+.nav { padding-left: 0; margin-bottom: 0; list-style: none;}
+#bw_user .order_tabn { font-size: 16px; padding: 0 20px;}
+.nav-tabs { height: 44px; border-bottom: 1px solid #ddd;}
+.nav-tabs>li { float: left; margin-bottom: -1px;}
+.nav>li { position: relative; display: block;}
+.nav>li>a { position: relative; display: block; padding: 10px 15px;}
+.nav-tabs>li>a { margin-right: 2px; line-height: 1.42857143; border: 1px solid transparent; border-radius: 4px 4px 0 0;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover { color: #555; cursor: default; background-color: #fff; border: 1px solid #ddd; border-bottom-color: transparent;}
+
+/*提問表單----*/
+.app_cont { padding: 0 15px;}
+
+/*標題列*/
+.customer{ margin: 10px 0;}
+.cusTitle{ margin: 0 !important; padding: 0; display: inline-block;}
+.custMore{ font-size: 14px;}
+
+/*填表設定*/
+.myqForm .form-control{ display: block; box-sizing: border-box;  width: 100%; height: 45px; padding: 6px 12px; font-size: 14px; line-height: 1; color: #555; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 4px; box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);}
+.myqForm textarea.form-control{ height: auto; padding-top: 12px;}
+.myqForm .form-group{ width: 100%; text-align: left;}
+.myqForm .form-group label{ display: inline-block; margin-bottom: 5px; font-weight: bold;}
+
+/*問題類型寬度*/
+.myqForm .has-feedback .ui-corner-all{ width: 100% !important;}
+
+/*bonus+gift-------------------*/
+/*序號輸入框*/
+.form-inline .form-group { display: inline-block; margin-bottom: 0; vertical-align: middle;}
+.form-inline .form-control { display: inline-block; width: auto; vertical-align: middle;}
+
+/*相關連結按鈕*/
+.btn-default { color: #333; background-color: #fff; border-color: #ccc;}
+.btn-default:hover { background-color: #e6e6e6; border-color: #adadad;}
+.btn-default:active,.btn-default:focus { background-color: #e6e6e6; border-color: #adadad;}
+
+/****header------------------------------------------*/
+.headerNav > ul > .pcNav{ display: none;}
+
+.bwTopHeader{ position: fixed; top: 0; z-index: 12; width: 100%; border-top: #231815 4px solid; box-shadow: rgba(0,0,0,0.03) 0 3px 3px;}
+.bwTopHeader{ background-color: #fff;}
+.headerShoulder{ display: none;}
+
+.headerMain{ align-items: center; justify-content: space-between; max-width: 1590px; margin: 0 auto;}
+.headerBwLogo{ float: left; width: 150px; padding: 21px 0 21px 10px;}
+.headerBwLogo img{ display: block; width: 100%;}
+
+.headerLogout{ float: right;}
+.headerLogoutBtn{ display: block; margin: 12px 10px; padding: 5px 15px; background-color: #f5f5f5; font-weight: bold; border-radius: 3px; text-decoration: none; transition-property:  background-color, color; transition-duration: 0.5s; }
+.headerLogoutBtn:hover{ background-color: #231815; color: #fff;}
+
+/*訂單明細popup-------------------*/
+.modal-dialog{ width: 90%; max-width: 600px;}
+.modalPopBody{ padding: 1rem 0.8rem;}
+
+/*標題*/
+.modalPopTitle{ font-size: 14px; font-weight: bold;}
+.modalPopTitle::before { content: '\2022'; color: #ffa91c; list-style: none; margin-right: 5px; font-size: 18px;}
+
+/*列表*/
+.modalPopRow{ display: flex; flex-wrap: wrap; align-items: center; padding: 10px 0; border-bottom: #ccc 1px dotted; font-size: 14px; word-break: break-word;}
+.modalPopItem{ width: 100px; margin-right: 10px; padding: 0 8px; font-weight: bold; box-sizing: border-box;}
+.modalPopCon{ width: calc(100% - 110px); padding: 0 8px; box-sizing: border-box;}
+.modalPopBody .modalPopRow:last-child{ border-bottom: 0;}
+
+/*按鈕區*/
+.modalPopFooter{ justify-content: center;}
+.modalPopFooter .btn{ font-size: 15px;}
+
+
+@media screen and (min-width:767px) {
+    .mNOpcIN{ display: inline;}
+    .mNOpcBL{ display: block;}
+    .mNOpcINBL{ display: inline-block;}
+    .pcNOmIN, .pcNOmBL, .pcNOmINBL{ display: none;}
+
+    .flx-pc1{ flex: 1;}
+    .flx-pc2{ flex: 2;}
+    .flx-pc3{ flex: 3;}
+
+    /****footerRwd------------------------------------------*/
+    .footerRwd{ padding: 25px 0;}
+    .footerW{ display: flex; flex-wrap: wrap; border-top: 0; max-width: 980px; margin: 0 auto; padding: 0 20px;}
+    .mapGroup{ flex: 1;}
+    .mapTitle{ height: auto; margin-bottom: 15px; padding-left: 0; background-color: transparent;}
+    .mapTitle .arrow{ padding: 14px; color: #CFCFCF;}
+
+    /*--mapList--*/
+    .mapList{ display: block; transition: none;}
+    .mapList > li{ width: inherit; background-color: transparent; padding-right: 20px;}
+    .mapList > li > a{ display: inline-block; padding: 0;}
+    .mapList > li > a:hover{ font-weight: bold;} 
+
+    .mapList > li.mapApp{ display: block; padding: 0; cursor: pointer;}
+    .mapList > li.mapApp a{ display: block; padding: 5px 0 0 0 ;}
+    .mapList > li.mapApp a img{ display: block; width: 85px; height: auto;}
+    .mapAppTitle{ display: inline-block; width: 82px; margin-top: 8px; padding-top: 8px; padding-right: 0; border-top: var(--grayLight) 1px dashed;}
+    .mapAppTitle .arrow{ margin-left: 8px; font-size: var(--txt-3xs); color: var(--grayLight);}
+    .appOpen .arrow{ transform: rotate(180deg);}
+
+    /*--mapContact--*/
+    .mapContact{ flex: 1.1;  margin-top: 0; padding: 0; background-color: transparent;}
+    .mapContact .mapTitle{ padding-bottom: 0; background-color: transparent;}
+    .mapContact .mapList{ padding: 0;}
+    .mapContact .mapList > li{ display: block; width: auto;}
+    .mapContact .mapList > li > a{ padding-top: 4px; padding-bottom: 4px; font-size: 13px;}
+    .mapContact .mapList > li.mapContactTime{ padding-right: 0; font-size: var(--txt-2xs);}
+
+    /*mapJoin*/.mapList > li.mapJoin > a{ padding: 4px 14px; background-color: var(--gray); color: #fff; border-radius: 3px; font-size: 13px;}
+    .mapContact .mapList > li > a:hover, 
+    .mapList > li.mapJoin > a:hover{ background-color: var(--cisBlack);}
+    
+    /*--Social + Copyright--*/
+    .footerInfo{ width: 100%; display: flex; flex-direction: row-reverse; align-items: center; margin-top: 30px; padding-top: 15px; border-top: var(--grayLight) 1px solid;}
+    .footerSocial{ flex: 1; max-width: inherit; padding: 0;}
+    .footerSocial a{ display: block; transition: 0.4s;}
+    .footerSocial a:hover{ transform:translateY(-3px);}
+    .footerCopyright{ flex: 2.2; padding: 0; border-top: 0;}
+    .footerLogo{ width: 230px; margin: 0 12px 0 1%; vertical-align: middle;}
+    .footerCopyright p{ display: inline-block; margin: 10px 0; vertical-align: middle;} 
+
+    /*20221019------------------------------------------*/
+    /*register註冊頁-------------------*/
+    .regiGroup{ display: flex; align-items: center;}
+    .regiGroup .form-control{ font-size: 14px;}
+
+    /*年月日*/.regiGroup select{ width: 117px;}
+    /*同意*/.form-group.regiRule p{ text-align: center;}
+
+    /*customer-------------------*/
+    /*標題列*/.custMore{ float: right;}
+    /*提問表單----*/.app_cont { padding: 0 25px;}
+
+    /****header------------------------------------------*/
+    .headerNav > ul > .menuHam{ display: none;}
+    .headerNav > ul > .mNav{ display: none;}
+    .headerNav > ul > .pcNav{ display: block;}
+
+    .headerShoulder{ display: block; background-color: #f8f8f8; font-size: 12px; color: #8b8b8b;}
+    .headerShoulder h1{ margin: 0; font-size: 12px;}
+    .shoulderW{ overflow: hidden; max-width: 1590px; margin: 0 auto; padding: 5px 10px;}
+    .shoulderInfo{ float: left; width: calc(100% - 480px); overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+    .shoulderNav{ float: right; display: flex; color: #E2E2E2;} 
+    .shoulderNav a{ display: block; margin: 0 10px; color: #8b8b8b; text-decoration: none; transition: 0.4s;}
+    .shoulderNav a:hover{ color: #231815;}
+    .shoulderNav a:last-child{ margin-right: 0;}
+
+    .headerBwLogo{ width: 220px; padding: 17px 0 17px 10px;}
+
+    /*手機版內容高度*/
+    .catebar_padtop{ padding-top: 108px !important;}
+    
+    /*訂單明細popup-------------------*/
+    .modalPopBody{ padding: 1rem 2rem;}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .rwdWrapperFull{ width: 925px;/*現在平版是吃電腦版*/}
+
+    /****fastpay------------------------------------------*/
+    .fastStepBox{ width: 90%;}
+    .fastStepList li{ font-size: 17px;}
+    .impor{ font-size: 19px;}
+}
+
+
+/*以下現有版型使用*/
+@media screen and (min-width:767px) and (max-width:1200px){
+}
+
+@media screen and (min-width:1680px){
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1680px){
+    .rwdWrapperFull{ width: 1200px;}
+
+    /****header------------------------------------------*/
+    .shoulderW{ max-width: 1190px;}
+    .headerMain{ max-width: 1190px;}
+}
+
+@media screen and (min-width: 1001px)  and (max-width: 1200px){
+    .rwdWrapperFull{ width: 1000px;}
+
+    /****header------------------------------------------*/
+    .shoulderW{ max-width: 990px;}
+    .headerMain{ max-width: 990px;}
+}
+/*./現有版型使用*/
+
+
+@media screen and (max-width:360px) {
+    .mapList > li.mapApp a img{ height: 27px;}
+}
