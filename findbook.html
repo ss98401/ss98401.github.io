@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+
+  <title>找書看</title>
+  <link rel="shortcut icon" href="./img/icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/template.css">   
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+
+
+</head>
+
+<body>
+
+  <form id="findbook-form18" action="/findbooks" method="post">
+    <input type="hidden" name="_poporf-tk001"
+      value="DBEbG9mk_nE1CDrysqGxWnsXTleNsZOpp6uiA0pRxmtVJElonMymSFJYA5bW7v8PFHAFD8bT9ueQ7cV6Hgn2Xg=="><input
+      type="hidden" value="all" name="tag" id="tag" />
+    <input type="hidden" value="all" name="words" id="words" />
+    <input type="hidden" value="all" name="status" id="status" />
+    <input type="hidden" value="time" name="sort" id="sort" />
+    <input type="hidden" value="0" name="cate" id="cate" />
+    <input type="hidden" value="all" name="sub" id="sub" />
+    <input type="hidden" value="" name="tid" id="tid" />
+    <div class="content">
+
+      <!----- breadcrumbs ----->
+      <div class="breadcrumbs"><a href="/">入口頁</a><a href="/index">原創市集</a>
+        <h1 class="crumbh1">找書看</h1>
+      </div>
+      <div class="wrap contentwrap FindB">
+        <h3 class="title mb">找書看</h3>
+        <div class="box findbook">
+          <div class="find-item">
+            <div class="label">作品分類</div>
+            <div class="forradio">
+              <a href="#"
+                onclick="document.getElementById('tid').value ='1'; document.getElementById('findbook-form18').submit();"
+                class="radio">克蘇魯</a><a href="#"
+                onclick="document.getElementById('tid').value ='2'; document.getElementById('findbook-form18').submit();"
+                class="radio">玄幻</a><a href="#"
+                onclick="document.getElementById('tid').value ='3'; document.getElementById('findbook-form18').submit();"
+                class="radio">歷史</a><a href="#"
+                onclick="document.getElementById('tid').value ='4'; document.getElementById('findbook-form18').submit();"
+                class="radio">都市</a><a href="#"
+                onclick="document.getElementById('tid').value ='5'; document.getElementById('findbook-form18').submit();"
+                class="radio">喜劇</a><a href="#"
+                onclick="document.getElementById('tid').value ='6'; document.getElementById('findbook-form18').submit();"
+                class="radio">推理</a><a href="#"
+                onclick="document.getElementById('tid').value ='7'; document.getElementById('findbook-form18').submit();"
+                class="radio">暗黑</a><a href="#"
+                onclick="document.getElementById('tid').value ='8'; document.getElementById('findbook-form18').submit();"
+                class="radio">清水</a><a href="#"
+                onclick="document.getElementById('tid').value ='9'; document.getElementById('findbook-form18').submit();"
+                class="radio">穿越</a><a href="#"
+                onclick="document.getElementById('tid').value ='10'; document.getElementById('findbook-form18').submit();"
+                class="radio">重生</a>
+            </div>
+          </div><!--for item-->
+
+          <div class="find-item">
+            <div class="label">作品字數</div>
+            <div class="forradio">
+              <a href="#"
+                onclick="document.getElementById('words').value ='all'; document.getElementById('findbook-form18').submit();"
+                class="radio checked">不限</a><a href="#"
+                onclick="document.getElementById('words').value ='1'; document.getElementById('findbook-form18').submit();"
+                class="radio">5萬以下</a><a href="#"
+                onclick="document.getElementById('words').value ='2'; document.getElementById('findbook-form18').submit();"
+                class="radio">5萬-10萬</a><a href="#"
+                onclick="document.getElementById('words').value ='3'; document.getElementById('findbook-form18').submit();"
+                class="radio">10萬-30萬</a><a href="#"
+                onclick="document.getElementById('words').value ='4'; document.getElementById('findbook-form18').submit();"
+                class="radio">30萬-50萬</a><a href="#"
+                onclick="document.getElementById('words').value ='5'; document.getElementById('findbook-form18').submit();"
+                class="radio">50萬-100萬</a><a href="#"
+                onclick="document.getElementById('words').value ='6'; document.getElementById('findbook-form18').submit();"
+                class="radio">100萬以上</a>
+            </div>
+          </div><!--for item-->
+
+          <div class="find-item">
+            <div class="label">作品狀態</div>
+            <div class="forradio">
+              <a href="#"
+                onclick="document.getElementById('status').value ='all'; document.getElementById('findbook-form18').submit();"
+                class="radio checked">不限</a><a href="#"
+                onclick="document.getElementById('status').value ='1'; document.getElementById('findbook-form18').submit();"
+                class="radio">連載</a><a href="#"
+                onclick="document.getElementById('status').value ='2'; document.getElementById('findbook-form18').submit();"
+                class="radio">完結</a>
+            </div>
+          </div><!--for item-->
+
+
+        </div>
+
+        <div class="table">
+          <div class="row rhead">
+            <div class="t1 t-center">編號</div>
+            <div class="t2">書名</div>
+            <div class="t4">作者</div>
+            <div class="t7">作品標籤</div>
+          </div><!--row-->
+          <div id="w0" class="list-view">
+            <div data-key="0">
+              <div class="row">
+                <div class="t1 t-center">
+                  <div class="tcate">1</div>
+                </div>
+                <div class="t2"><a class="bname" href="/books/704675">宿命之環</a></div>
+                <div class="t4"><a class="blue" href="/users/lanarlette">愛潛水的烏賊</a></div>
+                <div class="t7">
+                  <div class="tags"><!-- 標籤 -->
+                    <a class="tags" href="/tags/10" title="詭秘2">詭秘2</a><a class="tags" href="/tags/34"
+                      title="克蘇魯">克蘇魯</a>
+                  </div>
+                </div>
+              </div><!--row-->
+            </div>
+            <div data-key="1">
+              <div class="row">
+                <div class="t1 t-center">
+                  <div class="tcate">2</div>
+                </div>
+                <div class="t2"><a class="bname" href="/books/779017">深海餘燼</a></div>
+                <div class="t4"><a class="blue" href="/users/silverku571">遠瞳</a></div>
+                <div class="t7">
+                  <div class="tags"><!-- 標籤 -->
+                    <a class="tags" href="/tags/2" title="科技">科技</a><a class="tags" href="/tags/3" title="克蘇魯">克蘇魯</a>
+                  </div>
+                </div>
+              </div><!--row-->
+            </div>
+            <div data-key="2">
+              <div class="row">
+                <div class="t1 t-center">
+                  <div class="tcate">3</div>
+                </div>
+                <div class="t2"><a class="bname" href="/books/794456">詭秘之主</a></div>
+                <div class="t4"><a class="blue" href="/users/mouse520">愛潛水的烏賊</a></div>
+                <div class="t7">
+                  <div class="tags"><!-- 標籤 -->
+                    <a class="tags" href="/tags/26" title="克蘇魯">克蘇魯</a>
+                  </div>
+                </div>
+              </div><!--row-->
+            </div>
+            <div data-key="3">
+              <div class="row">
+                <div class="t1 t-center">
+                  <div class="tcate">4</div>
+                </div>
+                <div class="t2"><a class="bname" href="/books/796318">我的治愈系遊戲</a></div>
+                <div class="t4"><a class="blue" href="/users/saykon1603">我會修空調</a></div>
+                <div class="t7">
+                  <div class="tags"><!-- 標籤 -->
+                    <a class="tags" href="/tags/3" title="懸疑">懸疑</a>
+                  </div>
+                </div>
+              </div><!--row-->
+            </div>
+            <div data-key="4">
+              <div class="row">
+                <div class="t1 t-center">
+                  <div class="tcate">5</div>
+                </div>
+                <div class="t2"><a class="bname" href="/books/740548">驚悚樂園</a></div>
+                <div class="t4"><a class="blue" href="/users/Matt802">三天兩覺</a></div>
+                <div class="t7">
+                  <div class="tags"><!-- 標籤 -->
+                    <a class="tags" href="/tags/9" title="遊戲">遊戲</a><a class="tags" href="/tags/13" title="冒險">冒險</a>
+                  </div>
+                </div>
+              </div><!--row-->
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="pagenum">
+        <div id="w1" class="pagenum"><span><img src="https://cdn0.popo.tw/web1/images/icon-page-first.png" width="9"
+              height="9"></span>
+          <span><img src="https://cdn0.popo.tw/web1/images/icon-page-prev.png" width="7" height="7"></span>
+          <a class="num current" href="/findbooks?page=1">1</a>
+          <a class="num" href="/findbooks?page=2">2</a>
+          <a class="num" href="/findbooks?page=3">3</a>
+          <a class="num" href="/findbooks?page=4">4</a>
+          <a class="num" href="/findbooks?page=5">5</a>
+          <a class="num" href="/findbooks?page=6">6</a>
+          <a class="num" href="/findbooks?page=7">7</a>
+          <a class="num" href="/findbooks?page=8">8</a>
+          <a class="num" href="/findbooks?page=9">9</a>
+          <a class="num" href="/findbooks?page=10">10</a>
+          <a class="num" href="/findbooks?page=2"><img src="https://cdn0.popo.tw/web1/images/icon-page-next.png"
+              width="7" height="7"></a>
+          <a class="num" href="/findbooks?page=1388"><img src="https://cdn0.popo.tw/web1/images/icon-page-last.png"
+              width="9" height="9"></a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </form>
+  <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+
+
+
+
+
+  <!----- footer ----->
+  <!-- No.101-->  
+
+
+
+</body>
+
+</html>
