@@ -1,0 +1,27 @@
+// for join UI
+if ($(window).width() < 766) {
+   
+   $('.join-area').click( function(event){
+			event.stopPropagation();
+			$(this).children('.tip').toggle();
+		});
+		$('body').click(function(){
+			$('.tip').hide();
+		})
+
+		$(document).click( function () {
+			$('.tip').hide();
+		});
+		$(document).on('click touchstart', function () {
+			$('.tip').hide();
+		});
+		
+}else {
+		
+		$(document).ready(function(){
+			$(".join-area").hover(function(){
+				//slide up all the link lists
+				$(this).children('.tip').toggle();
+			})
+		})
+}
