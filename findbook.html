@@ -8,7 +8,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/template.css">   
+  <link rel="stylesheet" href="./css/template.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/swiper.min.css">
 
@@ -16,6 +16,91 @@
 </head>
 
 <body>
+  <div class="navbar">
+
+    <!-- <a href="javascript:" id="close-btn2" class="menuclose"></a>
+    <ul class="left-nav">
+        <li><a href="https://www.popo.tw/" rel="noreferrer noopener" target="_blank">入口頁</a></li><li class="current">原創市集</li>
+        <li><a href="https://allwrite.popo.tw/" rel="noreferrer noopener" target="_blank">征文舞台</a></li>
+        <li><a href="https://publish.popo.tw/store" rel="noreferrer noopener" target="_blank">POPO小商店</a></li>
+        <li><a href="https://www.popo.tw/relay?url=https://www.qidian.com.tw/" rel="noreferrer noopener" target="_blank">起點</a></li>
+        <li><a href="https://www.popo.tw/relay?url=https://www.po18.tw" rel="noreferrer noopener" target="_blank">PO18</a></li>
+        <li><a href="https://www.popo.tw/blgl" target="_blank" class="ora">耽美百合直達車</a></li>
+    </ul> -->
+    <ul class="right-nav">
+
+      <!-- <li><a class="gre" href="https://www.popo.tw/bill">儲值服務</a></li> -->
+      <!-- <li><a href="https://members.popo.tw/apps/login.php?u=https://www.popo.tw/index">打卡</a></li> -->
+      <!-- <li><a href="https://members.popo.tw/apps/login.php?u=https://www.popo.tw/index">我要寫作</a></li> -->
+      <li><a href="https://members.popo.tw/apps/register_choice.php">購物車</a></li>
+      <li><a href="https://members.popo.tw/apps/register_choice.php">會員詳情</a></li>
+      <!--改動態 登入後出現會員詳情 -->
+      <li><a href="https://members.popo.tw/apps/register_choice.php">註冊</a></li>
+      <li><a href="https://members.popo.tw/apps/login.php?u=https://www.popo.tw/index">登入</a></li>
+    </ul>
+  </div>
+  <div id="menu_back2"></div>
+  <header>
+    <div class="wrap">
+      <a href="https://www.popo.tw/index" id="headlogo">
+        <img src="../img/icon.png"></a>
+      <a href="javascript:" id="menu-btn1"></a>
+      <a href="javascript:" id="menu-btn2"></a>
+    </div>
+    <div class="mainnav-wrap"> <!-- for mobile nav -->
+      <a href="javascript:" id="close-btn1" class="menuclose"></a>
+      <div class="search"> <!-- search -->
+
+        <form id="header-search-form" action="https://www.popo.tw/search" method="post"><!--搜尋欄 暫定-->
+          <input type="hidden" name="_poporf-tk001"
+            value="qBONm51kWACklyK7LWfI_boxDzqNficg93I2NYVJptnQa-b0zAgtd9LZe-9GKb-y0GJ_C8UmY0eeGEFdywrHuA=="><input
+            type="text" id="searchterm" name="name" placeholder="搜尋">
+          <button type="submit" class="sent-btn"></button>
+        </form>
+      </div>
+      <nav id="mainnav">
+
+        <ul>
+          <!-- <li class="sub "><a class="menutitle" href="https://www.popo.tw/index#">濃情館</a>                    <div class="submenu">
+		<a href="https://www.popo.tw/cates/1">濃情館首頁</a>		<a href="https://www.popo.tw/cates/1/subs">全部</a>		<a href="https://www.popo.tw/cates/1/subs/1">校園愛情</a><a href="https://www.popo.tw/cates/1/subs/2">都會愛情</a><a href="https://www.popo.tw/cates/1/subs/3">古代愛情</a><a href="https://www.popo.tw/cates/1/subs/4">羅曼史</a><a href="https://www.popo.tw/cates/1/subs/6">耽美</a><a href="https://www.popo.tw/cates/1/subs/7">百合</a><a href="https://www.popo.tw/cates/1/subs/8">同人</a>		
+                    </div>
+                </li> -->
+          <!-- <li class="sub "><a class="menutitle" href="https://www.popo.tw/index#">異想館</a>                    <div class="submenu">
+                   <a href="https://www.popo.tw/cates/2">異想館首頁</a>		<a href="https://www.popo.tw/cates/2/subs">全部</a>				
+		<a href="https://www.popo.tw/cates/2/subs/1">玄幻/奇幻</a><a href="https://www.popo.tw/cates/2/subs/2">科幻/網遊</a><a href="https://www.popo.tw/cates/2/subs/3">恐怖靈異</a><a href="https://www.popo.tw/cates/2/subs/4">驚悚推理</a><a href="https://www.popo.tw/cates/2/subs/5">武俠仙俠</a><a href="https://www.popo.tw/cates/2/subs/6">歷史</a><a href="https://www.popo.tw/cates/2/subs/7">都市</a><a href="https://www.popo.tw/linovel/subs">輕之文庫</a>	
+                    </div>
+                </li> -->
+          <!-- <li class="sub "><a class="menutitle" href="https://www.popo.tw/index#">綜合館</a>                    <div class="submenu">
+		<a href="https://www.popo.tw/cates/3/subs">全部</a>		<a href="https://www.popo.tw/cates/3/subs/1">商業理財</a><a href="https://www.popo.tw/cates/3/subs/2">生活風格</a><a href="https://www.popo.tw/cates/3/subs/3">心靈養生</a><a href="https://www.popo.tw/cates/3/subs/4">藝術設計</a><a href="https://www.popo.tw/cates/3/subs/5">人文科普</a><a href="https://www.popo.tw/cates/3/subs/6">影視</a><a href="https://www.popo.tw/cates/3/subs/7">漫畫</a><a href="https://www.popo.tw/cates/3/subs/8">其它</a>	
+                    </div>
+                </li> -->
+          <!-- <li class="alo"><a href="https://www.popo.tw/blgl" class="ora">耽美百合直達車</a></li>
+                <li class="sub "><a class="menutitle" href="#">輕之文庫</a>                    <div class="submenu">
+                   <a href="/linovel">輕之文庫首頁</a>		<a href="/linovel/subs">作品列表</a>                    </div>
+                </li>　 -->
+
+          <li class="alo"><a class="menutitle" href="https://www.popo.tw/findbooks">找書看</a></li>
+          <li class="alo"><a class="menutitle" href="https://www.popo.tw/rank">排行榜</a></li>
+          <!-- <li class="alo"><a class="menutitle" href="https://www.popo.tw/notes">精彩短文</a></li> -->
+          <li class="alo"><a class="menutitle" href="https://www.popo.tw/stations">作家專區</a></li>
+          <li class="sub "><a class="menutitle" href="https://www.popo.tw/index#">活動與訊息</a>
+            <div class="submenu">
+              <a href="https://www.popo.tw/events/online">活動專區</a> <a href="https://www.popo.tw/editor_talks">編輯大聲公</a>
+              <a href="https://www.popo.tw/site_notices">站方公告</a>
+            </div>
+
+          </li>
+          <!-- <li class="mo"><a href="https://www.popo.tw/">入口頁</a></li>
+                <li class="mo"><a href="https://www.popo.tw/index">原創市集</a></li>
+                <li class="mo"><a href="https://allwrite.popo.tw/">征文舞台</a></li>
+                <li class="mo"><a href="https://publish.popo.tw/store">POPO小商店</a></li>
+                <li class="mo"><a href="https://www.popo.tw/relay?url=https://www.qidian.com.tw/">起點</a></li>
+                <li class="mo"><a href="https://www.popo.tw/relay?url=https://www.po18.tw">PO18</a></li> -->
+        </ul>
+      </nav>
+    </div> <!-- for mobile nav -->
+    <div id="menu_back1"></div>
+  </header>
 
   <form id="findbook-form18" action="/findbooks" method="post">
     <input type="hidden" name="_poporf-tk001"
@@ -30,7 +115,7 @@
     <div class="content">
 
       <!----- breadcrumbs ----->
-      <div class="breadcrumbs"><a href="/">入口頁</a><a href="/index">原創市集</a>
+      <div class="breadcrumbs"><a href="/index">原創市集</a>
         <h1 class="crumbh1">找書看</h1>
       </div>
       <div class="wrap contentwrap FindB">
@@ -183,39 +268,71 @@
           </div>
         </div>
       </div>
-      <div class="pagenum">
-        <div id="w1" class="pagenum"><span><img src="https://cdn0.popo.tw/web1/images/icon-page-first.png" width="9"
-              height="9"></span>
-          <span><img src="https://cdn0.popo.tw/web1/images/icon-page-prev.png" width="7" height="7"></span>
-          <a class="num current" href="/findbooks?page=1">1</a>
-          <a class="num" href="/findbooks?page=2">2</a>
-          <a class="num" href="/findbooks?page=3">3</a>
-          <a class="num" href="/findbooks?page=4">4</a>
-          <a class="num" href="/findbooks?page=5">5</a>
-          <a class="num" href="/findbooks?page=6">6</a>
-          <a class="num" href="/findbooks?page=7">7</a>
-          <a class="num" href="/findbooks?page=8">8</a>
-          <a class="num" href="/findbooks?page=9">9</a>
-          <a class="num" href="/findbooks?page=10">10</a>
-          <a class="num" href="/findbooks?page=2"><img src="https://cdn0.popo.tw/web1/images/icon-page-next.png"
-              width="7" height="7"></a>
-          <a class="num" href="/findbooks?page=1388"><img src="https://cdn0.popo.tw/web1/images/icon-page-last.png"
-              width="9" height="9"></a>
-        </div>
-      </div>
+
     </div>
     </div>
 
   </form>
-  <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+  
 
 
 
 
 
   <!----- footer ----->
-  <!-- No.101-->  
+  <!-- No.101-->
+  <!----- footer ----->
+  <!-- No.211  -->
 
+  <footer>
+    <div class="wrap foot">
+      <a href="https://www.popo.tw/index" title="參考網站">
+        <div class="left"><img src="./popo_img/icon-foot-author.png" width="88" height="88" alt="參考來源"
+            title="參考來源"></div>
+        <div class="right">
+          <h3>參考來源</h3>
+          <p>POPO原創市集</p>
+        </div>
+      </a>
+      <a href="https://www.popo.tw/faq" title="分工人員">
+        <div class="left"><img src="./popo_img/icon-foot-reader.png" width="88" height="88" alt="讀者手冊"
+            title="讀者手冊"></div>
+        <div class="right">
+          <h3>分工人員</h3>
+          <p>蕭有村 馬資閔 張家維</p>
+        </div>
+      </a>
+      <a href="https://www.popo.tw/about" title="我還沒想到">
+        <div class="left"><img src="./popo_img/icon-foot-about.png" width="88" height="88" alt="關於原創市集"
+            title="關於原創市集"></div>
+        <div class="right">
+          <h3>我還沒想到</h3>
+          <p>我還沒想到</p>
+        </div>
+      </a>
+    </div>
+    <!--<div class="copy-area animate-plus" data-animations="fadeIn" data-animation-delay="0s" data-animation-when-visible="true">-->
+    <div class="copy-area animate-plus animated" data-animations="fadeIn" data-animation-delay="0s"
+      data-animation-when-visible="true" data-animation-group="_0">
+      <!-- <div class="logo-area">
+            <div class="logo"></div>
+            <div class="social"><a href="https://www.popo.tw/relay?url=https://www.facebook.com/wwwpopotw" target="_blank" title="Facebook粉絲團" class="fb"></a><a href="https://www.popo.tw/relay?url=http://www.weibo.com/popotw" target="_blank" title="微博" class="wb"></a><a href="https://www.popo.tw/relay?url=https://www.instagram.com/popostory_ig/" target="_blank" title="Instagram" class="ig"></a><a href="mailto:service@popo.tw" target="_blank" title="客服信箱" class="em"></a></div>
+        </div>
+        <ul class="foot-nav">
+            <li><a href="http://eventpage.popo.tw/whatispopo/">POPO是什麼</a></li>
+            <li><a href="https://www.popo.tw/rule/popocoin_usage">PO幣儲值與使用</a></li>
+            <li><a href="https://www.popo.tw/rule/member">服務條款</a></li>
+            <li><a href="https://www.popo.tw/privacy/pronouncement">隱私政策</a></li>
+            <li><a href="https://www.popo.tw/guide">網站導覽</a></li>
+            <li><a href="mailto:service@popo.tw">聯絡我們</a></li>
+            <li><a href="https://www.popo.tw/faq">常見問題</a></li>
+            <li><a href="https://www.popo.tw/consult">版權洽詢</a></li>
+            <li><a href="https://www.popo.tw/rule/exchange_tw">作家收入兌換說明</a></li>
+        </ul>
+        <div class="copy">Copyright © <script>document.write(new Date().getFullYear());</script>2023 Cite Media Holding Group All Rights Reserved. 版權所有 城邦原創股份有限公司 統一編號 28823076</div> -->
+
+    </div>
+  </footer>
 
 
 </body>
